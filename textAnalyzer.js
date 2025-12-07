@@ -30,4 +30,5 @@ function analyzeText(inputText) {
         averageWordLength: parseFloat(averageWordLength),
         top5Words
     };
+
 }
