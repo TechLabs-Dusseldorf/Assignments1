@@ -20,3 +20,21 @@ let uniqueWords = Object.keys(wordMap).length;
     console.log("The number of distinct words is:", uniqueWords);
 let averageWordLength = (wordLength / totalWords).toFixed(2);
     console.log("The average length of all words is:", averageWordLength);
+
+let keys = Object.keys(wordMap);
+keys.sort(function(a, b) {
+    let countA = wordMap[a];
+    let countB = wordMap[b];
+    return countB - countA;
+});
+
+console.log("The 5 most frequent words are:");
+let top5Words = [];
+for (i = 0; i < 5; i++) {
+    let word = keys[i];
+    top5Words.push({ 
+        word: word, 
+        count: wordMap[word] 
+    });
+    console.log("   At Position ", i+1 ," the word: '",top5Words[i].word,"' with the count:", top5Words[i].count);
+}
