@@ -13,7 +13,7 @@ You’ll practice string processing, array methods, and basic data aggregation.
 
 1. **Input**
    - Accept a single string representing a paragraph.
-   - Treat words case-insensitively (e.g., “The” and “the” are the same word).
+   - Treat words case-insensitively (e.g., “The” and “the” are the same word).q
    - Ignore punctuation when counting words.
 
 2. **Words & Tokenization**
