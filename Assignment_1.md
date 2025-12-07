@@ -8,15 +8,10 @@ test=test.replace("  "," ")
 
 //creating the main array
 function assignment1(string){
-let words=[]
-let editedString = test
-let totalWords = 0
-do {
-words.push(editedString.slice(,editedString.indexOf(" ")))
-totalWords+=1
-} while test.indexOf(" ")>0
 
-averageWordLength=Math.round((test.length-(totalWords-1))/totalWords)*100)/100
+let testArray = test.split(" ")
+let totalWords = testArray.length
+averageWordLength=Math.round(((test.length-(totalWords-1))/totalWords)*100)/100
 results = `there are ${totalWords} words in this string. The average length of them is ${averageWordLength}. //The top5Words are ${topArray}`
 return results
 }
